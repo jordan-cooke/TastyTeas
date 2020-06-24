@@ -1,3 +1,17 @@
 #imgsrc {
 	display: none;
 }
+
+.cardstyle {
+  width: 98% !important;
+	margin: auto;
+}
+
+.about {
+	text-align: center;
+}
+
+#map {
+	width:100% !important;
+	height: 400px;
+}
