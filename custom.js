@@ -30,5 +30,5 @@ function updatedCartCount() {
   if (getCookie("mint")){cartCount+=Number(getCookie("mint"))}
   if (getCookie("orange")){cartCount+=Number(getCookie("orange"))}
   if (getCookie("raspberry")){cartCount+=Number(getCookie("raspberry"))}
-  document.getElementsByClassName('badge').value = cartCount;
+  document.getElementsById('badge').value = cartCount;
 }
