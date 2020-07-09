@@ -24,26 +24,111 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          About
+          Our Teas
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="aboutus.html">About Us</a>
-          <a class="dropdown-item" href="#">About Our Tea</a>
+          <a class="dropdown-item" href="berryfusion.html">Berry Fusion Tea</a>
+          <a class="dropdown-item" href="lemon.html">Lemon Tea</a>
+          <a class="dropdown-item" href="mint.html">Mint Tea</a>
+          <a class="dropdown-item" href="orange.html">Orange Tea</a>
+          <a class="dropdown-item" href="raspberry.html">Raspberry Tea</a>
         </div>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="aboutus.html">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="historyoftea.html">History of Tea<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="historyoftea.html">Contact Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="historyoftea.html">FAQ<span class="sr-only">(current)</span></a>
+      </li>
     </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <a href="cart.html" class="cart"><img src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fcart.png?v=1594224523272" alt="Cart"><span class="badge">3</span></a>
+    </div>
   </div>
 </nav>
 <!--Content-->
-<div class="card cardstyle">
-test
-</div>
+<div class="card flex-row flex-wrap cardstyle">
+        <div class="card-header border-0">
+            <img class="teaicon" src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fberryfusion.png?v=1594225590257" alt="Berry Fusion Icon">
+        </div>
+        <div class="card-block px-2">
+            <h4 class="card-title">Berry Fusion Tea</h4>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn btn-primary" onclick="addToCart('berryfusion')">Add to Cart</a>
+        </div>
+        <div class="w-100"></div>
+    </div>
+    <div class="card flex-row flex-wrap cardstyle">
+        <div class="card-header border-0">
+            <img class="teaicon" src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Flemon.png?v=1594226017223" alt="Lemon Icon">
+        </div>
+        <div class="card-block px-2">
+            <h4 class="card-title">Lemon Tea</h4>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn btn-primary" onclick="addToCart('lemon')">Add to Cart</a>
+        </div>
+        <div class="w-100"></div>
+    </div>
+    <div class="card flex-row flex-wrap cardstyle">
+        <div class="card-header border-0">
+            <img class="teaicon" src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fmint.png?v=1594226068134" alt="Mint Icon">
+        </div>
+        <div class="card-block px-2">
+            <h4 class="card-title">Mint Tea</h4>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn btn-primary" onclick="addToCart('mint')">Add to Cart</a>
+        </div>
+        <div class="w-100"></div>
+    </div>
+    <div class="card flex-row flex-wrap cardstyle">
+        <div class="card-header border-0">
+            <img class="teaicon" src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Forange.png?v=1594226120067" alt="Orange Icon">
+        </div>
+        <div class="card-block px-2">
+            <h4 class="card-title">Orange Tea</h4>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn btn-primary" onclick="addToCart('orange')">Add to Cart</a>
+        </div>
+        <div class="w-100"></div>
+    </div>
+    <div class="card flex-row flex-wrap cardstyle">
+        <div class="card-header border-0">
+            <img class="teaicon" src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fraspberry.png?v=1594226214909" alt="Raspberry Icon">
+        </div>
+        <div class="card-block px-2">
+            <h4 class="card-title">Raspberry Tea</h4>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn btn-primary" onclick="addToCart('raspberry')">Add to Cart</a>
+        </div>
+        <div class="w-100"></div>
+    </div>
 <div id="imgsrc">
-<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>
+    <!--logo-->
+    Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--cart-->
+    Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--berryfusion-->
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--lemon-->
+    Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--mint-->
+    Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--orange-->
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <!--raspberry-->
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  </div>
 </div>
   </body>
 </html>
