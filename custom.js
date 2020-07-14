@@ -30,7 +30,8 @@ function updatedCartCount() {
   if (getCookie("mint")){cartCount+=Number(getCookie("mint"))}
   if (getCookie("orange")){cartCount+=Number(getCookie("orange"))}
   if (getCookie("raspberry")){cartCount+=Number(getCookie("raspberry"))}
-  document.getElementById('badge').innerHTML = cartCount;
+  if (cartCount === 0){document.getElementById('badge').innerHTML = "";}
+  else {document.getElementById('badge').innerHTML = cartCount;}
 }
 
 //Remove all items from cart

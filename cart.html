@@ -13,7 +13,7 @@
 		<script src="bootstrap.js"></script>
 		<script src="custom.js"></script>
   </head>
-  <body>
+  <body onload="updatedCartCount()">
 	<!--Navbar-->
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#"><img src="img/logo.png"> Tasty Teas</a>
@@ -60,7 +60,7 @@
 <div class="card cardstyle">
 	<div class="card-body about">
 		<h5 class="card-title">Cart</h5>
-		<p class="card-text"></p>
+		<p class="card-text"><a href="#" class="btn btn-primary" onclick="clearCart()">Empty Cart</a></p>
 		</div>
 </div>
 <div id="imgsrc">
