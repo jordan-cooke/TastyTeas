@@ -1,17 +1,38 @@
 #imgsrc {
-	display: none;
+  display: none;
 }
 
 .cardstyle {
-  width: 98% !important;
-	margin: auto;
+  margin: 5px;
+  padding: 10px;
 }
 
 .about {
-	text-align: center;
+  text-align: center;
+}
+
+.teaicon {
+  width: 150px;
 }
 
 #map {
-	width:100% !important;
-	height: 400px;
+  width: 100% !important;
+  height: 400px;
+}
+
+.cart {
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.cart .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
 }
