@@ -1,3 +1,7 @@
+$(document).ready(){
+  updateCartCount();
+}
+
 function getCookie(name) {
   var v = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
   return v ? v[2] : null;
@@ -15,11 +19,10 @@ function deleteCookie(name) {
 function addToCart(item) {
   if (getCookie(item) == null) {
     setCookie(item, 1);
-    updatedCartCount();
   } else {
     setCookie(item, parseInt(getCookie(item)) + 1);
-    updatedCartCount();
   }
+  updatedCartCount();
 }
 
 //Update cart badge count
@@ -30,5 +33,21 @@ function updatedCartCount() {
   if (getCookie("mint")){cartCount+=Number(getCookie("mint"))}
   if (getCookie("orange")){cartCount+=Number(getCookie("orange"))}
   if (getCookie("raspberry")){cartCount+=Number(getCookie("raspberry"))}
-  document.getElementsById('badge').value = cartCount;
+  document.getElementById('badge').innerHTML = cartCount;
+}
+
+//Remove all items from cart
+function clearCart () {
+  deleteCookie("berryfusion");
+  deleteCookie("lemon");
+  deleteCookie("mint");
+  deleteCookie("orange");
+  deleteCookie("raspberry");
+  updatedCartCount();
+}
+
+//Remove all of a single item
+function removeItem(item) {
+  deleteCookie(item);
+  updatedCartCount();
 }
