@@ -1,6 +1,3 @@
-$(document).ready(){
-  updateCartCount();
-}
 
 function getCookie(name) {
   var v = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
@@ -37,13 +34,13 @@ function updatedCartCount() {
 }
 
 //Remove all items from cart
-function clearCart () {
+function clearCart() {
   deleteCookie("berryfusion");
   deleteCookie("lemon");
   deleteCookie("mint");
   deleteCookie("orange");
   deleteCookie("raspberry");
-  updatedCartCount();
+  document.getElementById('badge').innerHTML = "";
 }
 
 //Remove all of a single item
