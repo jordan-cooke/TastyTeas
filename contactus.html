@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Tasty Teas</title>
-		<link rel="icon" href="img/logo.png">
-		<!--CSS-->
-		<link href="bootstrap.css" rel="stylesheet" type="text/css" />
-		<link href="custom.css" rel="stylesheet" type="text/css" />
-		<!--Javascript-->
-		<script src="jquery.js"></script>
-		<script src="bootstrap.js"></script>
-		<script src="custom.js"></script>
+    <link rel="icon" href="img/logo.png" />
+    <!--CSS-->
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css" />
+    <!--Javascript-->
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="custom.js"></script>
   </head>
   <body onload="updatedCartCount()">
-	<!--Navbar-->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html"><img src="img/logo.png"> Tasty Teas</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"
+        ><img src="img/logo.png" /> Tasty Teas</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Our Teas
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="berryfusion.html">Berry Fusion Tea</a>
-          <a class="dropdown-item" href="lemon.html">Lemon Tea</a>
-          <a class="dropdown-item" href="mint.html">Mint Tea</a>
-          <a class="dropdown-item" href="orange.html">Orange Tea</a>
-          <a class="dropdown-item" href="raspberry.html">Raspberry Tea</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Teas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="berryfusion.html"
+                >Berry Fusion Tea</a
+              >
+              <a class="dropdown-item" href="lemon.html">Lemon Tea</a>
+              <a class="dropdown-item" href="mint.html">Mint Tea</a>
+              <a class="dropdown-item" href="orange.html">Orange Tea</a>
+              <a class="dropdown-item" href="raspberry.html">Raspberry Tea</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="aboutus.html"
+              >About Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="historyoftea.html"
+              >History of Tea<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contactus.html"
+              >Contact Us<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="faq.html"
+              >FAQ<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <a href="cart.html" class="cart"
+            ><span
+              ><img
+                src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fcart.png?v=1594224523272"
+                alt="Cart"/></span
+            ><span class="badge" id="badge"></span
+          ></a>
         </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="aboutus.html">About Us <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="historyoftea.html">History of Tea<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="contactus.html">Contact Us<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="faq.html">FAQ<span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <div class="form-inline my-2 my-lg-0">
-      <a href="cart.html" class="cart"><span><img src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fcart.png?v=1594224523272" alt="Cart"></span><span class="badge" id="badge"></span></a>
+      </div>
+    </nav>
+    <!--Content-->
+    <div class="card cardstyle">
+      <div class="card-body about">
+        <h2 class="card-title">Contact Us</h2>
+        <p class="card-text">
+          We love hearing from you!<br />
+          Are you happy with our product?<br />
+          Do you see room for improvement?<br />
+          Maybe you just want to say hi?<br />
+          It doesn't matter what it is, we want to hear from you!<br />
+          Please use any of the methods below to reach out to us!<br /><br />
+          <img src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fphone.png?v=1595512973031" class="contacticons"> <a href="tel:123-456-7890">123-456-7890</a><br />
+          <img src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fmail.png?v=1595512977265" class="contacticons"> <a href="mailto:contact@tastyteas.com">contact@tastyteas.com</a><br />
+          <img src="https://cdn.glitch.com/d4fd031e-1a9d-4b33-b097-bd739bc4e833%2Fchat.png?v=1595512980590" class="contacticons"> <a href="https://rawgit.com/ddsky/chatbot/master/demo/demo-ddg.html" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=538,height=525,toolbar=1,resizable=0'); return false;" >Start Chat</a>          
+        </p>
+      </div>
     </div>
-  </div>
-</nav>
-<!--Content-->
-<div class="card cardstyle">
-	<div class="card-body about">
-		<h5 class="card-title">Contact Us</h5>
-		<p class="card-text"></p>
-		</div>
-</div>
-<div id="imgsrc">
-<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-</div>
   </body>
 </html>
