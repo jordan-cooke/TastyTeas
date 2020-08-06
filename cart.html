@@ -65,17 +65,17 @@
     <form id="userinfo">
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="inputFullName">Full Name</label>
-          <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+          <label for="inputFullName">Full Name <span class="requireditem">*</span></label>
+          <input type="text" class="form-control" id="inputFullName" placeholder="Full Name" required>
         </div>
         <div class="form-group col-md-6">
-          <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          <label for="inputEmail">Email <span class="requireditem">*</span></label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
         </div>
       </div>
       <div class="form-group">
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <label for="inputAddress">Address <span class="requireditem">*</span></label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
       </div>
       <div class="form-group">
         <label for="inputAddress2">Address 2</label>
@@ -83,12 +83,12 @@
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
+          <label for="inputCity">City <span class="requireditem">*</span></label>
+          <input type="text" class="form-control" id="inputCity" required>
         </div>
         <div class="form-group col-md-4" id="state">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
+          <label for="inputState">State <span class="requireditem">*</span></label>
+          <select id="inputState" class="form-control" required>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
             <option value="Arizona">Arizona</option>
@@ -147,16 +147,8 @@
           </select>
         </div>
         <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Confirm Information
-          </label>
+          <label for="inputZip">Zip <span class="requireditem">*</span></label>
+          <input type="text" class="form-control" id="inputZip" required>
         </div>
       </div>
       <button type="button" class="btn btn-primary" onclick="purchaseComplete(document.getElementById('inputFullName').value, document.getElementById('inputEmail').value, document.getElementById('inputAddress').value, document.getElementById('inputAddress2').value, document.getElementById('inputCity').value, document.getElementById('inputState').value, document.getElementById('inputZip').value)">Place Your Order</button>
